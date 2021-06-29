@@ -14,13 +14,13 @@ public class prizma_hacim01 {
 		
 		System.out.println("Kýsa Kenar giriniz:");
 		
-		int kýsaKenar = scan.nextInt();
+		int kisaKenar = scan.nextInt();
 		
 		System.out.println("Yükseklik giriniz:");
 		
 		int yukseklik = scan.nextInt();
 		
-		int hacim = kýsaKenar * uzunKenar * yukseklik;
+		int hacim = kisaKenar * uzunKenar * yukseklik;
 		
 		
 		System.out.println("Hacim:" + hacim);
