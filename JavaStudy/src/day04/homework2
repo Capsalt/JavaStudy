@@ -1,0 +1,44 @@
+package homeworks;
+
+import java.util.Scanner;
+
+public class H16 {
+
+	public static void main(String[] args) {
+//      *
+//     **
+//    * *
+//   *  *
+//  *   *
+// *    *
+//*******
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Bir sayı giriniz");
+		
+		int x = scan.nextInt();
+		
+		for (int satir = 1; satir <= x; satir++) {
+			
+			 for (int bosluk = 1; bosluk <= x - satir; bosluk++)
+	                System.out.print(" ");
+
+	            
+	            for (int sutun = 1; sutun <= satir; sutun++) {
+	                
+	                if (satir == x || sutun == 1 || sutun == satir)
+	                    System.out.print("*");
+	                else
+	                    System.out.print(" ");
+	            }
+
+	            System.out.println();
+			
+		}
+		
+		
+
+	}
+
+}
