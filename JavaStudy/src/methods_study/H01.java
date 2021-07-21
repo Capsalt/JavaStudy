@@ -25,7 +25,6 @@ public class H18 {
 		
 		scan.close();
 		
-
 	}
 
 	public static void yerlestir(String s,String m) {
@@ -38,7 +37,6 @@ public class H18 {
 			System.out.println("ilk kelime çift karakterli değil");
 
 		}
-		
 		
 	}
 
