@@ -1,0 +1,62 @@
+package homeworks;
+
+import java.util.Scanner;
+
+public class H15 {
+
+	public static void main(String[] args) {
+		/* Problem Tanımı
+        Verilen iki sayının kombinasyonunu bulan kodu yazınız.
+        Hatırlatma C(n,r) = n! / (r!(n-r)!)
+        Ekran Çıktısı
+        Birinci sayıyı giriniz: 15
+        Ikinci sayıyı giriniz: 4
+        Kombinasyon: 1365
+        Birinci sayıyı giriniz: 5
+        Ikinci sayıyı giriniz: 3
+        Kombinasyon: 10
+        !her sayıda dogru veriyor 15 ile 4 ? 2 veriyor
+      */
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Birinci sayıyı giriniz");
+		
+		int n = scan.nextInt();
+		
+		System.out.println("İkinci sayıyı giriniz");
+		
+		int r = scan.nextInt();
+		
+		int faktor1 = 1;
+		int faktor2 = 1;
+		int faktor3 = 1;
+		int fark = n-r;
+		
+		for (int i = 1; i <= n ; i++) {
+			
+			faktor1*=i;
+			
+			
+		}
+		for (int j = 1; j <= r; j++) {
+			faktor2*=j;
+			
+			
+		}
+		for (int k = 1; k <= fark; k++) {
+			faktor3*=k;
+			
+			
+		}
+		
+		double kombinasyon = (double)faktor1/(faktor2*faktor3);
+		
+		System.out.println(kombinasyon);
+		
+		scan.close();
+		
+
+	}
+
+}
